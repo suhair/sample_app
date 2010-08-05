@@ -1,0 +1,10 @@
+require 'spec_helper'
+
+describe "LayoutLinks" do
+  render_views
+  describe "GET /layout_links" do
+    it "works! (now write some real specs)" do
+      get "/"
+    end
+  end
+end
