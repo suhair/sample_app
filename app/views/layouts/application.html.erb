@@ -2,13 +2,25 @@
 <html>
 <head>
   <title><%= title %></title>
-  <%= stylesheet_link_tag "blueprint/screen", :media => 'screen' %>
-  <%= stylesheet_link_tag "blueprint/print", :media => 'print' %>
+    <%= render :partial => 'layouts/stylesheets' %>
   <%= csrf_meta_tag %>
 </head>
 <body>
 
-<%= yield %>
+  <div class="container">
+    <%= render :partial => 'layouts/header' %>
+
+
+    <section class="round">
+      <%= yield %>
+    </section>
+
+    <%= render :partial => 'layouts/footer' %>
+
+  </div>  
+
+
+
 
 </body>
 </html>

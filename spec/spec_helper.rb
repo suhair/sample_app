@@ -28,5 +28,6 @@ RSpec.configure do |config|
 
 	  config.include RSpec::Rails::ControllerExampleGroup, :example_group => { 
 	:file_path => /\bspec[\\\/]controllers[\\\/]/ }
-	
+	config.include RSpec::Rails::ControllerExampleGroup, :example_group => { 
+	:file_path => /\bspec[\\\/]requests[\\\/]/ }
 end

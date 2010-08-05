@@ -1,14 +1,6 @@
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-        <title>
-        Ruby on Rails tutorial app | Home
-        </title>
-</head>
-<body>
-	
-</body>
-</html>
+<p>
+  This is the home page for the sample website application
+  that illustartes various development procedures and platforms
+  </p>
 
-
+  <%= link_to "Signup Now", "#", :class => "signup_button round" %>
